@@ -1,7 +1,7 @@
-[![INSA](img/index/logo-insa.jpg)](https://www.insa-toulouse.fr/fr/index.html)
-[<img src="img/index/IMT.jpg" alt="drawing" height="120"/>](https://www.math.univ-toulouse.fr/)
-[<img src="img/index/n7.jpg" alt="drawing" height="50"/>](https://www.enseeiht.fr/)
-[<img src="img/index/wikistat.jpg" alt="drawing" height="50"/>](https://github.com/wikistat)
+[![INSA](docs/img/index/logo-insa.jpg)](https://www.insa-toulouse.fr/fr/index.html)
+[<img src="docs/img/index/IMT.jpg" alt="drawing" height="120"/>](https://www.math.univ-toulouse.fr/)
+[<img src="docs/img/index/n7.jpg" alt="drawing" height="50"/>](https://www.enseeiht.fr/)
+[<img src="docs/img/index/wikistat.jpg" alt="drawing" height="50"/>](https://github.com/wikistat)
 
 # AI technologies
 
