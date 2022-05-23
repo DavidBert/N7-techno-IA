@@ -7,9 +7,9 @@
 
 During this course you will:  
 
-- Learn to use cloud computing to train your models efficiently and monitor their trainings
-- Learn about code versioning and containers to share your code and produce reproducible results
+<!-- - Learn to use cloud computing to train your models efficiently and monitor their trainings -->
 <!-- -   Learn to process text data for natural language processing tasks -->
+- Learn about code versioning and containers to share your code and produce reproducible results
 -   Learn how to developp a recommender system
 -   Learn to train autonomous agents to play video games using Reinforcement Learning
 -   Learn to gain interpretability on your machine learning models
