@@ -11,7 +11,7 @@
 [Notebook](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/wikistat/AI-Frameworks/blob/website/code/developpement/intro_pytorch.ipynb)  
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/wikistat/AI-Frameworks/blob/website/code/developpement/intro_pytorch.ipynb)
 
-## Practical session
+<!-- ## Practical session
 
 For this session, you will have to write a script to train a small neural network on the MNIST dataset using Pytorch.  
 During training, you will use tensorboard to:
@@ -244,6 +244,6 @@ You should see something similar to this:
 Click on the __inactive__ button and choose __projector__ to look at the embeddings computed by your network
 ![](img/tensorboard_3.png)
 ![](img/tensorboard_4.png)
-![](img/tensorboard_6.png)
+![](img/tensorboard_6.png) -->
 
 

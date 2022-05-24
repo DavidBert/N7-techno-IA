@@ -7,7 +7,7 @@
 *   [Slides](https://github.com/wikistat/AI-Frameworks/tree/master/slides/Code_Development_Docker.pdf)
 <!-- *   [Practical session](https://github.com/wikistat/AI-Frameworks/blob/master/CodeDevelopment/TP.pdf) -->
 
-## Practical Session
+<!-- ## Practical Session
 
 In this practical session, you will now run your code through a Docker container.  
 Using docker in data science projects has two advantages:
@@ -152,4 +152,4 @@ Start a new container using the following command to get access to the GPU and C
 docker run -it --gpus all --ipc=host --name [container_name] -v ~/[your_folder_path]:/workspace/[folder_name] [image_name]
 ```
 
-Now try to send all the results and weights to your local machine and maybe to look at the tensorboard logs.
+Now try to send all the results and weights to your local machine and maybe to look at the tensorboard logs. -->
