@@ -5,27 +5,29 @@
 <iframe width="560" height="315" src="https://www.youtube.com/embed/loMf5bFyzY4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 *   [Slides](https://github.com/wikistat/AI-Frameworks/tree/master/slides/Code_Development_Docker.pdf)
-<!-- *   [Practical session](https://github.com/wikistat/AI-Frameworks/blob/master/CodeDevelopment/TP.pdf) -->
 
-<!-- ## Practical Session
+
+## Practical Session
 
 In this practical session, you will now run your code through a Docker container.  
 Using docker in data science projects has two advantages:
 *   Improving the reproducibility of the results  
-*   Facilitating the portability and deployment
-In this session, we will try to package the code from the previous session, allowing us to train a neural network to colorize images into a Docker image and use this image to instantiate a container on a GCloud instance to run the code.
+*   Facilitating the portability and deployment  
+
+In this session, we will try to package the code from our gradio applications, allowing us trained neural networks to predict digits lables and to colorize images into a Docker image.
+We will then use this image to instantiate a container that could be hosted on any physical device to run the app.
 
 We will first create the Dockerfile corresponding to our environment.  
 
 On your local machine, create a new file named `Dockerfile` containing the following code:
 ```python
 # Base image from pytorch
-FROM pytorch/pytorch:1.7.1-cuda11.0-cudnn8-runtime
+FROM pytorch/pytorch
 # Set up for your local zone an UTC information
 ENV TZ=Europe/Paris
 RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
 # Additional librairies
-RUN pip install tqdm tensorboard
+RUN pip install gradio tensorboard
 ```
 
 Take a moment to analyze this dockerfile.
@@ -33,47 +35,7 @@ As you can see, it is built upon an existing image from Pytorch.
 Starting from existing images allows for fast prototyping. You may find existing images on [DockerHub](https://hub.docker.com/). The Pytorch image we will be using is available [here](https://hub.docker.com/r/pytorch/pytorch)
 
 
-Fire up your GCloud instance and send your dockerfile using 
-```console
-gcloud compute scp [your_file_path] [your_instance_name]:Workspace/ --zone [your_instance_zone]
-```
-
-Connect to your instance:
-```console
-gcloud compute ssh --zone [your_instance_zone] [your_instance_name]
-```
-
 If docker is not already installed in your machine, follow [this guide](https://docs.docker.com/engine/install/) to install it.
-You will also need the NVIDIA Container Toolkit to be installed to allow docker to communicate with the instance GPU.
-If you created your GCloud instance following the previous session's instructions, it should be OK.
-To verify that it is OK you may run the following command:
-
-```console
-sudo docker run --rm --gpus all nvidia/cuda:11.0-base nvidia-smi
-```
-If the command output is in the form of :
-```console
-+-----------------------------------------------------------------------------+
-| NVIDIA-SMI 450.51.06    Driver Version: 450.51.06    CUDA Version: 11.0     |
-|-------------------------------+----------------------+----------------------+
-| GPU  Name        Persistence-M| Bus-Id        Disp.A | Volatile Uncorr. ECC |
-| Fan  Temp  Perf  Pwr:Usage/Cap|         Memory-Usage | GPU-Util  Compute M. |
-|                               |                      |               MIG M. |
-|===============================+======================+======================|
-|   0  Tesla T4            On   | 00000000:00:1E.0 Off |                    0 |
-| N/A   34C    P8     9W /  70W |      0MiB / 15109MiB |      0%      Default |
-|                               |                      |                  N/A |
-+-------------------------------+----------------------+----------------------+
-
-+-----------------------------------------------------------------------------+
-| Processes:                                                                  |
-|  GPU   GI   CI        PID   Type   Process name                  GPU Memory |
-|        ID   ID                                                   Usage      |
-|=============================================================================|
-|  No running processes found                                                 |
-+-----------------------------------------------------------------------------+
-```
-then everything is OK. Otherwise, you may need to install the NVIDIA Container Toolkit manually, following [this guide](https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/install-guide.html#docker).
 
 You may now build your first image using the following command:
 
@@ -82,7 +44,7 @@ sudo docker build -t [your_image_name] -f [path_to_your_image]  [build_context_f
 ```
 
 The image should take a few minutes to build.  
-Once this is done, use the following command to list the available images on your GCloud instance:
+Once this is done, use the following command to list the available images on your device:
 ```console
 sudo docker image ls
 ```
@@ -98,10 +60,10 @@ Run the following command to run your fist container:
 docker run -it --name [your_container_name] [your_image_name]
 ```
 You should now have access to an interactive terminal from your container.  
-On this terminal, open a Python console and check that Pytorch is installed and has access to your instance GPU.
+On this terminal, open a Python console and check that Pytorch is installed.
 ```python
 import torch
-print(torch.cuda.is_available())
+print(torch.__version__)
 ```
 
 Quit the Python console and quit your container using `ctrl+d`.  
@@ -133,23 +95,32 @@ sudo docker rm [container_id_or_name]
 
 We will now see how to share data between the container and the machine it is running on.
 First create a folder containing the files:
-*   `download_landscapes.sh`
-*   `unet.py`
-*   `colorize.py`
-*   `data_utils.py`
+*   `colorize_app.py`
+*   `mnist_app.py`
+*   `mnist.pth`
+*   `unet.pth`
 
-Create a new container using this time mounting a shared volume using the following command:
+Create a new container using this time mounting a shared volume with the following command:
 ```console
 docker run -it --name [container_name] -v ~/[your_folder_path]:/workspace/[folder_name] [image_name]
 ```
-Go to the shared folder and run the `download_landscapes.sh` script.
-Leave the container and look at your folder in the local. What can you see?
 
-If you want to run your job using the interactive mode, you need to give access at your container to your host resources.
+Try to run one of your gradio applications using the interactive mode.
 
-Start a new container using the following command to get access to the GPU and CPU resources and run the `colorize.py` script.
-```console
-docker run -it --gpus all --ipc=host --name [container_name] -v ~/[your_folder_path]:/workspace/[folder_name] [image_name]
+```bash
+cd [folder_name]
+python colorize_app.py
 ```
 
-Now try to send all the results and weights to your local machine and maybe to look at the tensorboard logs. -->
+Leave the container and look at your folder in the local. What can you see?
+
+Re-start your container and try to run your app in background mode.
+
+
+```bash
+sudo docker exec -t container1 python ./devlop/colorize_app.py --weights_path ./devlop/unet.pth
+```
+
+This is it for this session.
+Do not hesitate to play a little more with Docker.
+For instance try to train the mnist classifier directly in your container and to collect the tensorboard logs and the resulting weights on your local machine.
