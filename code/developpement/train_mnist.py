@@ -102,3 +102,4 @@ if __name__=='__main__':
   # save a dataset sample in tensorboard
   img_grid = torchvision.utils.make_grid(images[:64])
   writer.add_image('mnist_images', img_grid)
+  torch.save(net.state_dict(), "mnist_model.pth")
