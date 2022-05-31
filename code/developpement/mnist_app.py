@@ -5,7 +5,7 @@ from models import MNISTNet
 
 
 model = MNISTNet()
-model.load_state_dict(torch.load('mnist_model.pth'))
+model.load_state_dict(torch.load('mnist_model.pth', map_location=torch.device('cpu')))
 model.eval()
 
 def recognize_digit(image):
@@ -19,4 +19,4 @@ gr.Interface(fn=recognize_digit,
              outputs=gr.outputs.Label(num_top_classes=3),
              live=True,
              description="Draw a number on the sketchpad to see the model's prediction.",
-             ).launch(debug=True);
+             ).launch(debug=True, share=True);

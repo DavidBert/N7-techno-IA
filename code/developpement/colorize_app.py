@@ -9,7 +9,7 @@ source_process = transforms.Compose(
          transforms.Normalize(mean=[0.5], std=[0.5])])
 
 model = UNet()
-model.load_state_dict(torch.load('unet.pth'))
+model.load_state_dict(torch.load('unet.pth', map_location=torch.device('cpu')))
 model.eval()
 
 def recognize_digit(image):
@@ -24,4 +24,4 @@ gr.Interface(fn=recognize_digit,
              outputs="image",
              #live=True,
              description="Select an image",
-             ).launch(debug=True);
+             ).launch(debug=True, share=True);
