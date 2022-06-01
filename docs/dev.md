@@ -18,7 +18,7 @@ During training, you will use tensorboard to:
 
 - monitor your network across epochs
 - manage your experiments and hyper-parameters  
-- provide some vizualisations.
+- provide some visualizations.
 
 The solution is available here.  [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/DavidBert/N7-techno-IA/blob/master/code/developpement/MNIST_solution.ipynb)  
 Try to complete the practical session without looking at it!
@@ -112,15 +112,14 @@ def test(model, dataloader):
     return test_corrects / total
 ```
 We will now implement the ``main`` method that will be called every time the python script is executed.  
-
 We would like to give the user the possibility to adjust some parameters of the learning process, such as:
 
 * The batch size
 * The learning rate
 * The number of training epochs
 
-To do so we will use Python [argparse module](https://docs.python.org/3/library/argparse.html). This module is used to write user-friendly command-line interfaces.
-Adding an argument to a python script using __argaparse__ is pretty straightforward.
+To do so we will use Python [argparse module](https://docs.python.org/3/library/argparse.html). This module is used to write user-friendly command-line interfaces.  
+Adding an argument to a python script using __argaparse__ is pretty straightforward.  
 First you need to import the argparse module and instanciate a parser within the ``main`` method:
 
 ```python
@@ -130,13 +129,13 @@ if __name__=='__main__':
   parser = argparse.ArgumentParser()
 ```
 
-Then just add a new argument to the parser precising the argument's name, its type, and optinnaly a default value and an helping message.
+Then, just add a new argument to the parser precising the argument's name, its type, and optionaly a default value and an helping message.
 
 ```python
   parser.add_argument('--exp_name', type=str, default = 'MNIST', help='experiment name')
 ```
 
-Finaly, you can use the argument in the script by using an ``args`` variable.
+Finaly, you can use the arguments in the script by using an ``args`` variable.
 
 ```python
   args = parser.parse_args()
@@ -239,7 +238,7 @@ writer = SummaryWriter(f'runs/MNIST')
 ```
 and add it as argument to the ``train`` method.  
 Re-run your script and check your tensorboard logs using in a separate terminal:
-```
+```bash
 tensorboard --logdir runs
 ```
 
@@ -276,7 +275,7 @@ Now these following code to the end of your ```main``` function to log the embed
 ```
 
 Re-run your script and restart tensorboard.   
-Visualize the network computational graph by clicking on __Graph__.
+Visualize the network computational graph by clicking on __Graph__.  
 You should see something similar to this:
 ![](img/tensorboard_2.png)
 
@@ -304,7 +303,7 @@ The core Interface class is initialized with three required parameters:
 
 Gradio includes more than [20 different components](https://gradio.app/docs/#components), most of which can be used as inputs or outputs.
 
-In this example, we will use a *sketchpad* (which is an instance of the [*Image* component](https://gradio.app/docs/#image))component for the input and a [*Label*](https://gradio.app/docs/#label) component for the output.
+In this example, we will use a *sketchpad* (which is an instance of the [*Image* component](https://gradio.app/docs/#image))component for the input and a [*Label* component](https://gradio.app/docs/#label)  for the output.
 
 ```python
 gr.Interface(fn=recognize_digit, 

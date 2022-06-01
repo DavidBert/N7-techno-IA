@@ -13,8 +13,7 @@ nav:
     #   - Recurrent Network: text3.md
     - Development tools for Data Scientist: 
       - Python Scripts: dev.md
-      # - Set up GCoud: gcloud_set_up.md
-      # - Introduction to GCloud: gcloud.md
+      - Cloud Computing: cloud_computing.md
       - Introduction to Docker: docker.md
     # - Introduction to Reinforcement Learning: rl.md
     # - Recommender systems: rec_sys.md
@@ -24,7 +23,7 @@ nav:
   - Github repository: https://github.com/DavidBert/N7-techno-IA
 #theme: slate
 theme:
-  name: 'spacelab'
+  name: 'flatly'
   logo: img/logo-insa.jpg
   favicon: img/favicon.ico
   

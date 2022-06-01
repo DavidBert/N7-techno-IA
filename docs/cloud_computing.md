@@ -24,7 +24,7 @@ If you haven't already done so, fork [this repository](https://github.com/DavidB
 ## Data
 
 We will be working with the [Landscapes dataset](https://github.com/ml5js/ml5-data-and-models/tree/master/datasets/images/landscapes) composed of 4000 images in seven categories of landscapes (city, road, mountain, lake, ocean, field, and forest).
-Instead of using it to train a classifier, we will use it to train a neural network to colorize black and white images.
+Instead of using it to train a classifier, we will use it to train a neural network to colorize black and white images.  
 ![](img/gcloud_b&w.png) ![](img/gcloud_color.png)  
 Run the ```download_landscapes.sh``` script to download and extract the dataset.
 ```bash
@@ -149,7 +149,7 @@ Consider $x$ a grayscaled image and $y$ its corresponding colored image.
 Training a parametrized network $f_\theta$ to predict colorized images $ŷ$ amounts to minimizing the distance between the prediction $ŷ$ and the actual $y$.  
 That is to say minimizing $MSE(y, f_\theta(x))$.
 
-Fill the `colorize.py` file following canvas to train a UNet to colorize images (you can inspire yourself from the one in the MNIST example. Be careful, however, in your criterion choice):  
+Fill the `colorize.py` file to train a UNet to colorize images (you can inspire yourself from the one in the MNIST example. However, be careful in your criterion choice):  
 
 ```python
 import argparse # to parse script arguments
@@ -231,10 +231,12 @@ Try to run your code on your local machine for one or two minibatches to check t
 
 ## Training on cloud instances
 You now have everything to run your code on a cloud instance.  
-Since we do not have access to free cloud computing ressources in this class, we will use Google Colab to run the code.
-Comit and push your code to your GitHub repository.
-Go to the following Google Colab notebook and modify the first cell to use your own GitHub repository.
-Do not forget to add the following lines in the ```colorize.py``` file within Colab to enable the tensorboard compatibility with Colab.
+Since we do not have access to free cloud computing ressources in this class, we will use Google Colab to run the code.  
+
+Comit and push your code to your GitHub repository.  
+Go to the following [Google Colab notebook](https://colab.research.google.com/github/DavidBert/N7-techno-IA/blob/master/code/developpement/Cloud_computing.ipynb) and modify the first cell to use your own GitHub repository.
+
+To enable the tensorboard compatibility with Colab and Pytorch you need to add the following lines in the ```colorize.py```.
 
 ```python
 import tensorflow as tf  
@@ -254,12 +256,12 @@ You can now visualize the progression of your network while it is training in th
 Once training is over, download your model's weights on your local machine. We will use them to create the web app.
 
 ## Web app with Gradio
-Complete the ````colorize_app.py``` file to create a web app that colorizes black and white images and run your application with the following command:  
+Complete the ```colorize_app.py``` file to create a web app that colorizes black and white images and run your application with the following command:  
 ```bash
 python colorize_app.py --weights_path [path_to_the weights]
 ```	  
 You can test your app with random balck and white images from the net. For exemple one of [these](https://www.google.com/search?q=black+and+white+landscape&client=firefox-b-d&sxsrf=ALiCzsaXksCw7fTscNIIIPlJKrwyMkGK_w:1654093215988&source=lnms&tbm=isch&sa=X&ved=2ahUKEwi-ocG0uYz4AhX7gc4BHU5HCh8Q_AUoAXoECAEQAw&biw=1408&bih=624&dpr=1.36).
-```bash  
+
 Do you have any idea why the colors are so dull?
 
 
