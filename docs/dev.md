@@ -20,7 +20,7 @@ During training, you will use tensorboard to:
 - manage your experiments and hyper-parameters  
 - provide some vizualisations.
 
-The solution is available here.  [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/wikistat/AI-Frameworks/blob/website/code/developpement/Development_for_Data_Scientist_solutions.ipynb)  
+The solution is available here.  [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/DavidBert/N7-techno-IA/blob/master/code/developpement/MNIST_solution.ipynb)  
 Try to complete the practical session without looking at it!
 
 ## The network class:
