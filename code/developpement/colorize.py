@@ -37,25 +37,29 @@ def train(net, optimizer, loader, epochs=5, writer=None):
 
 
 if __name__=='__main__':
+    if __name__=='__main__':
     parser = argparse.ArgumentParser()
+    parser.add_argument('--exp_name', type=str, default = 'Colorize', help='experiment name')
     parser.add_argument('--data_path', type=str, default = 'data/landscapes', help='dataset path')
     parser.add_argument('--batch_size', type=int, default = int(32), help='batch_size')
+    parser.add_argument('--epochs', type=int, default = int(10), help='number of epochs')
     parser.add_argument('--lr', type=float, default = float(1e-3), help='learning rate')
 
     args = parser.parse_args()
     data_path = args.data_path
     batch_size = args.batch_size
+    epochs = args.epochs
     lr = args.lr
     unet = UNet().cuda()
     loader = get_colorized_dataset_loader(path=data_path, 
                                         batch_size=batch_size, 
                                         shuffle=True, 
-                                        num_workers=4)
+                                        num_workers=0)
 
 
     optimizer = optim.Adam(unet.parameters(), lr=lr)
     writer = SummaryWriter('runs/UNet')
-    loss = train(unet, optimizer, loader, epochs=10, writer=writer)
+    loss = train(unet, optimizer, loader, epochs=epochs, writer=writer)
 
     x, y = next(iter(loader))
 
