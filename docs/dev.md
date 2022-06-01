@@ -23,6 +23,13 @@ During training, you will use tensorboard to:
 The solution is available here.  [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/DavidBert/N7-techno-IA/blob/master/code/developpement/MNIST_solution.ipynb)  
 Try to complete the practical session without looking at it!
 
+
+## Practical session repository:
+If you haven't already done so, create an account on [Github](https://github.com/).
+Then fork [this repository](https://github.com/DavidBert/N7-techno-IA) and clone it on your computer.  
+![](img/code/fork.png)
+
+
 ## The network class:
 
 ![](img/Mnist_net.png)
@@ -315,4 +322,8 @@ python mnist_app.py --weights_path [path_to_the weights]
 
 Is your model accurate with your drawings?
 Do you know why it is less accurate than on MNIST?
+
+## Git
+Commit all the modifications you have made to the repository as well as the weights and push them to your remote repository.
+
 
