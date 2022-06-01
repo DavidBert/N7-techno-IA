@@ -16,6 +16,7 @@ At the start of each practical session, approximately 15 minutes will be devoted
    - **Course Introduction**: [Course Introduction](introduction.md)
    - **Development for Data Scientist**: [Introduction to Pytorch and Python scripts](dev.md)
    - **Introduction to Git**: [Introduction to Git](git_intro.md)
+   - **Development for Data Scientist**: [Cloud Computing](cloud_computing.md)
    - **Development for Data Scientist**: [Introduction to Docker](docker.md)
         
 

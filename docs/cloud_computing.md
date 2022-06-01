@@ -18,7 +18,7 @@ The solution is available here.  [![Open In Colab](https://colab.research.google
 Try to complete the practical session without looking at it!
 
 ## Practical session repository:
-If you haven't already done so, fork [this repository](https://github.com/DavidBert/N7-techno-IA) and clone it on your computer.  
+If you haven't already done so, fork [this repository](https://github.com/DavidBert/ModIA_TP1) and clone it on your computer.  
 ![](img/code/fork.png)
 
 ## Data
