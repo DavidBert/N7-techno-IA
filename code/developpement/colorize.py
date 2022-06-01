@@ -37,7 +37,6 @@ def train(net, optimizer, loader, epochs=5, writer=None):
 
 
 if __name__=='__main__':
-    if __name__=='__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument('--exp_name', type=str, default = 'Colorize', help='experiment name')
     parser.add_argument('--data_path', type=str, default = 'data/landscapes', help='dataset path')
