@@ -2,7 +2,6 @@ import torch
 import torch.nn as nn
 import torch.nn.functional as F
 
-# TODO rajouter le get_features dans l'énoncé
 class MNISTNet(nn.Module):
     def __init__(self):
         super(MNISTNet, self).__init__()

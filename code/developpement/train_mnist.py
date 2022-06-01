@@ -10,7 +10,7 @@ import torch.optim as optim
 from torch.utils.tensorboard import SummaryWriter
 from tqdm import tqdm
 
-from models import MNISTNet
+from mnist_net import MNISTNet
 #use it if you have module 'tensorflow._api.v2.io.gfile' has no attribute 'get_filesystem' error
 # import tensorflow as tf
 # import tensorboard as tb
@@ -54,11 +54,13 @@ if __name__=='__main__':
   parser.add_argument('--exp_name', type=str, default = 'MNIST', help='experiment name')
   parser.add_argument('--batch_size', type=int, default = int(64), help='batch_size')
   parser.add_argument('--lr', type=float, default = float(1e-3), help='learning rate')
+  parser.add_argument('--epochs', type=int, default = int(10), help='epochs')
 
   args = parser.parse_args()
   exp_name = args.exp_name
   batch_size = args.batch_size
   lr = args.lr
+  epochs = args.epochs
 
  
 
@@ -81,7 +83,7 @@ if __name__=='__main__':
     
   optimizer = optim.SGD(net.parameters(), lr=lr, momentum=0.9)
 
-  train(net, optimizer, trainloader, 10, writer)
+  train(net, optimizer, trainloader, epochs, writer)
   test_acc = test(net, testloader)
   # for experiment management
   writer.add_hparams({'lr': lr, 'bsize': batch_size}, {'hparam/accuracy': test_acc}, run_name='MNIST')
@@ -102,4 +104,4 @@ if __name__=='__main__':
   # save a dataset sample in tensorboard
   img_grid = torchvision.utils.make_grid(images[:64])
   writer.add_image('mnist_images', img_grid)
-  torch.save(net.state_dict(), "mnist_model.pth")
+  torch.save(net.state_dict(), "mnist_net.pth")
