@@ -25,3 +25,4 @@ During this course you will:
 - [High Dimensional & Deep Learning](https://github.com/wikistat/High-Dimensional-Deep-Learning)
 
 
+This course is inspired from the [IA frameworks.](https://wikistat.github.io/AI-Frameworks/index.html)
