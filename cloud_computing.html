@@ -264,7 +264,7 @@ class UNet(nn.Module):
         x = #use upsampleblock_2 and x_skip2
         x = #use upsampleblock_1 and x_skip1       
 
-        out = self.(x)
+        out = self.last_conv(x)
 
         return out
 
