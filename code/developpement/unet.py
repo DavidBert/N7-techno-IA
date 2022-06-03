@@ -2,7 +2,6 @@ import torch
 import torch.nn as nn
 import torch.nn.functional as F
 
-
 def double_conv(in_channels, out_channels):
     # returns a block compsed of two Convolution layers with ReLU activation function
     return nn.Sequential(
