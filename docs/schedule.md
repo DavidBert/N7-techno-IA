@@ -21,10 +21,12 @@ At the start of each practical session, approximately 15 minutes will be devoted
         
 
 ## Session 2
+   * **Introduction to Reinforcement learning:** [Introduction to Reinforcement Learning](rl.md)
+   * **Introduction to Reinforcement learning:**
 <!-- ## Session 2 - 15/11/2021
 ###### (8h30-11h45 & 13h00-15h00) -->
-   <!-- * **Explainable AI**: [Interpretability in Machine Learning](interpretability.md) -->
-   * **Explainable AI**
+   
+   
 
 ## Session 3
 <!-- ## Session 3 - 29/11/2021
@@ -34,9 +36,7 @@ At the start of each practical session, approximately 15 minutes will be devoted
    * **Recommender Systems**
 
 ## Session 4
-<!-- ## Session 4 - 06/12/2021
-###### (8h30-11h45 & 13h00-15h00) -->
+<!-- * **Explainable AI**: [Interpretability in Machine Learning](interpretability.md) -->
+* **Explainable AI**
 
-   <!-- * **Introduction to Reinforcement learning:** [Introduction to Reinforcement Learning](rl.md) -->
-   * **Introduction to Reinforcement learning:**
    

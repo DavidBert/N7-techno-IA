@@ -12,21 +12,23 @@ Optional (last year course on Policy gradients methods):
 **Practical sessions:**
 
 
+<!-- *   [Policy iteration and Value Iteration](https://github.com/DavidBert/AI-Frameworks/blob/website/code/reinforcement_learning/frozen_lake.ipynb) -->
 
-*   [Policy iteration and Value Iteration](https://github.com/DavidBert/AI-Frameworks/blob/website/code/reinforcement_learning/frozen_lake.ipynb)
+*   [![Policy iteration and Value Iteration](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/DavidBert/AI-Frameworks/blob/website/code/reinforcement_learning/frozen_lake.ipynb)
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/DavidBert/AI-Frameworks/blob/website/code/reinforcement_learning/frozen_lake.ipynb)
-Solution: [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/wikistat/AI-Frameworks/blob/website/code/reinforcement_learning/frozen_lake_solution.ipynb)
+Solution: [![Solution](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/wikistat/AI-Frameworks/blob/website/code/reinforcement_learning/frozen_lake_solution.ipynb)
 
-*   [Q-learning](https://github.com/DavidBert/AI-Frameworks/blob/website/code/reinforcement_learning/Taxi.ipynb)
+<!-- *   [Q-learning](https://github.com/DavidBert/AI-Frameworks/blob/website/code/reinforcement_learning/Taxi.ipynb) -->
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/DavidBert/AI-Frameworks/blob/website/code/reinforcement_learning/Taxi.ipynb)
-Solution:[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/wikistat/AI-Frameworks/blob/website/code/reinforcement_learning/Taxi_solution.ipynb)
+*   [![Q-learning](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/DavidBert/AI-Frameworks/blob/website/code/reinforcement_learning/Taxi.ipynb)
 
-*   [Deep Q-learning](https://github.com/DavidBert/AI-Frameworks/blob/website/code/reinforcement_learning/DQN.ipynb)
+Solution:[![Solution](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/wikistat/AI-Frameworks/blob/website/code/reinforcement_learning/Taxi_solution.ipynb)
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/wikistat/AI-Frameworks/blob/website/code/reinforcement_learning/DQN.ipynb)
-Solution:[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/wikistat/AI-Frameworks/blob/website/code/reinforcement_learning/DQN_solution.ipynb)
+<!-- *   [Deep Q-learning](https://github.com/DavidBert/AI-Frameworks/blob/website/code/reinforcement_learning/DQN.ipynb) -->
+
+*   [![Deep Q-learning](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/wikistat/AI-Frameworks/blob/website/code/reinforcement_learning/DQN.ipynb)
+
+Solution:[![Solution](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/wikistat/AI-Frameworks/blob/website/code/reinforcement_learning/DQN_solution.ipynb)
 
 <!-- *   [Deep Q-learning](https://github.com/DavidBert/AI-Frameworks/blob/website/code/reinforcement_learning/DQN.ipynb)
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/DavidBert/AI-Frameworks/blob/website/code/reinforcement_learning/DQN.ipynb) -->
