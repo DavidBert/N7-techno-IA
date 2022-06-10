@@ -14,17 +14,17 @@
 
 **Practical sessions:**
 
-*   Policy iteration and Value Iteration [![Policy iteration and Value Iteration](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/DavidBert/AI-Frameworks/blob/website/code/reinforcement_learning/frozen_lake.ipynb)
+*   Policy iteration and Value Iteration [![Policy iteration and Value Iteration](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/DavidBert/N7-techno-IA/blob/master/code/reinforcement_learning/frozen_lake.ipynb)
 
 <!-- Solution: [![Solution](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/wikistat/AI-Frameworks/blob/website/code/reinforcement_learning/frozen_lake_solution.ipynb) -->
 
 
-*   Q-learning [![Q-learning](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/DavidBert/AI-Frameworks/blob/website/code/reinforcement_learning/Taxi.ipynb)
+*   Q-learning [![Q-learning](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/DavidBert/N7-techno-IA/blob/master/code/reinforcement_learning/Taxi.ipynb)
 
 <!-- Solution:[![Solution](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/wikistat/AI-Frameworks/blob/website/code/reinforcement_learning/Taxi_solution.ipynb) -->
 
 
-*   Deep Q-learning [![Deep Q-learning](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/wikistat/AI-Frameworks/blob/website/code/reinforcement_learning/DQN.ipynb)
+*   Deep Q-learning [![Deep Q-learning](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/DavidBert/N7-techno-IA/blob/master/code/reinforcement_learning/DQN.ipynb)
 
 <!-- Solution:[![Solution](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/wikistat/AI-Frameworks/blob/website/code/reinforcement_learning/DQN_solution.ipynb) -->
 
