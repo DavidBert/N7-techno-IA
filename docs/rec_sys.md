@@ -2,8 +2,8 @@
 
 <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/SidOKu8RNmM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
 
-*   [Slides recommender systems](slides/Recommendation_System.pdf)  
-*   [Slides NLP](slides/NLP.pdf)
+*   [Slides recommender systems](https://github.com/DavidBert/N7-techno-IA/raw/master/slides/Recommendation_System.pdf)  
+*   [Slides NLP](https://github.com/DavidBert/N7-techno-IA/raw/master/slides/NLP.pdf)
 
 
 
