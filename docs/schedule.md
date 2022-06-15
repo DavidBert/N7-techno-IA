@@ -32,8 +32,7 @@ At the start of each practical session, approximately 15 minutes will be devoted
 <!-- ## Session 3 - 29/11/2021
 ###### (8h30-11h45 & 13h00-15h00) -->
    
-   <!-- * **Recommender Systems**: [Introduction to Recommender systems](rec_sys.md) -->
-   * **Recommender Systems**
+   * **Recommender Systems**: [Introduction to Recommender systems](rec_sys.md)
 
 ## Session 4
 <!-- * **Explainable AI**: [Interpretability in Machine Learning](interpretability.md) -->
