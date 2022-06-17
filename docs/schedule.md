@@ -35,7 +35,6 @@ At the start of each practical session, approximately 15 minutes will be devoted
    * **Recommender Systems**: [Introduction to Recommender systems](rec_sys.md)
 
 ## Session 4
-<!-- * **Explainable AI**: [Interpretability in Machine Learning](interpretability.md) -->
-* **Explainable AI**
+* **Explainable AI**: [Interpretability in Machine Learning](interpretability.md)
 
    
