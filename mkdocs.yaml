@@ -19,7 +19,7 @@ nav:
     - Recommender systems: rec_sys.md
     # - Interpretability in Machine Learning: interpretability.md
   - Schedule: schedule.md
-  # - Evaluation: evaluation.md
+  - Evaluation: evaluation.md
   - Github repository: https://github.com/DavidBert/N7-techno-IA
 #theme: slate
 theme:
