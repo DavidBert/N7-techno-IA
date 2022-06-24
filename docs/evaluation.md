@@ -1,6 +1,7 @@
 # Projet MODIA 2022
 
-#### [Lien du github du projet](https://github.com/DavidBert/projet_MODIA)  
+#### [Lien du github du projet](https://github.com/DavidBert/projet_MODIA)
+#### [Lien du planning du projet](https://docs.google.com/spreadsheets/d/1ErpaE-O9dFBbZl_NJ2T71IaUyscCQI9AGAdsXX992jg/edit?usp=sharing)  
 
 
 Dans ce projet, vous allez travailler sur des données<sup>[1](#myfootnote1)</sup>issues du site [Food.com](https://www.food.com/), un célèbre site de recettes de cuisine.   
