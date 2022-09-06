@@ -146,21 +146,23 @@ Les données, disponibles <a href="https://drive.google.com/drive/folders/18Jyox
 <h2 id="consignes">Consignes:</h2>
 <p>Les parties 1, 2 et 3 sont à réaliser dans un même notebook.</p>
 <h3 id="partie-1-recommandations-simples">Partie 1: Recommandations simples:</h3>
-<p>Dans <strong>un notebook</strong>
-*   Présentez plusieurs stratégies de recommandation  de recettes:
-    *   Par popularité
-    *   Selon les étapes de la recette (colonne steps)
-    *   Selon la description de la recette </p>
-<pre><code>Pour chacune de ces méthodes montrez quelques exemples des recommandation  obtenues.
-</code></pre>
+<p>Dans <strong>un notebook</strong> présentez plusieurs stratégies de recommandation  de recettes:</p>
+<ul>
+<li>Par popularité</li>
+<li>Selon les étapes de la recette (colonne steps)</li>
+<li>Selon la description de la recette </li>
+</ul>
+<p>Pour chacune de ces méthodes montrez quelques exemples des recommandation  obtenues.</p>
 <h3 id="partie-2-analyse-de-sentiments">Partie 2: Analyse de sentiments:</h3>
-<p>Dans <strong>un notebook</strong>
-*   À partir de la note donnée par les utilisateurs definissez une nouvelle variable sur le sentiment positif ou négatif d'un utilisateur vis-à-vis d'une recette.
+<p>Dans <strong>un notebook</strong></p>
+<ul>
+<li>À partir de la note donnée par les utilisateurs definissez une nouvelle variable sur le sentiment positif ou négatif d'un utilisateur vis-à-vis d'une recette.
 Par exemple, toutes les notes inférieures à 3 sont négatives et celles supérieurs sont positives.<br />
-Faites attention aux notes à 0 elles ne correspondent pas forcément à un sentiment négatif ou positif essayez d'en regarder quelques unes et décider de toutes les supprimer si elles posent problème.
-* En vous inspirant des parties NLP des TP <a href="https://colab.research.google.com/github/DavidBert/N7-techno-IA/blob/master/code/recommender_systems/INSA_Reco_solution.ipynb#scrollTo=CSWUNjSB5oo-"><em>Recommender_systems</em></a> et du TP <a href="https://colab.research.google.com/github/wikistat/AI-Frameworks/blob/website/code/interpretability/TP_interpretability_solution.ipynb"><em>Interpretability in Machine Learning</em></a>, entrainez un modèle à prédire si un utilisateur a aimé ou non une recette à partir de son commentaire et utilisez la méthode LIME pour visualiser les mots permettant de justifier la décision de votre modèle.<br />
+Faites attention aux notes à 0 elles ne correspondent pas forcément à un sentiment négatif ou positif essayez d'en regarder quelques unes et décider de toutes les supprimer si elles posent problème.</li>
+<li>En vous inspirant des parties NLP des TP <a href="https://colab.research.google.com/github/DavidBert/N7-techno-IA/blob/master/code/recommender_systems/INSA_Reco_solution.ipynb#scrollTo=CSWUNjSB5oo-"><em>Recommender_systems</em></a> et du TP <a href="https://colab.research.google.com/github/wikistat/AI-Frameworks/blob/website/code/interpretability/TP_interpretability_solution.ipynb"><em>Interpretability in Machine Learning</em></a>, entrainez un modèle à prédire si un utilisateur a aimé ou non une recette à partir de son commentaire et utilisez la méthode LIME pour visualiser les mots permettant de justifier la décision de votre modèle.<br />
 Montrez quelques exemples de prédiction et de visualisations des mots importants.<br />
-Enregistrez votre modèle dans un fichier pickle.</p>
+Enregistrez votre modèle dans un fichier pickle.</li>
+</ul>
 <h3 id="partie-3-neural-collaborative-filtering">Partie 3: Neural Collaborative Filtering:</h3>
 <ul>
 <li>Reprenez la classe <code>NCF</code> (Neural Collaborative Filtering )présente dans le <a href="https://colab.research.google.com/github/wikistat/AI-Frameworks/blob/website/code/recommender_systems/INSA_Reco_solution.ipynb">TP sur les systèmes de recommendations</a> pour entrainer un modèle de Neural Collaborative Filtering à prédire les notes d'un utilisateur.</li>
