@@ -11,20 +11,21 @@ Les données, disponibles [ici](https://drive.google.com/drive/folders/18JyoxTIr
 ## Consignes:
 Les parties 1, 2 et 3 sont à réaliser dans un même notebook.
 ### Partie 1: Recommandations simples:
-Dans __un notebook__
-*   Présentez plusieurs stratégies de recommandation  de recettes:
-    *   Par popularité
-    *   Selon les étapes de la recette (colonne steps)
-    *   Selon la description de la recette 
+Dans __un notebook__ présentez plusieurs stratégies de recommandation  de recettes:
 
-    Pour chacune de ces méthodes montrez quelques exemples des recommandation  obtenues.
+*   Par popularité
+*   Selon les étapes de la recette (colonne steps)
+*   Selon la description de la recette 
+
+Pour chacune de ces méthodes montrez quelques exemples des recommandation  obtenues.
 
 ### Partie 2: Analyse de sentiments:
 Dans __un notebook__
+
 *   À partir de la note donnée par les utilisateurs definissez une nouvelle variable sur le sentiment positif ou négatif d'un utilisateur vis-à-vis d'une recette.
 Par exemple, toutes les notes inférieures à 3 sont négatives et celles supérieurs sont positives.  
 Faites attention aux notes à 0 elles ne correspondent pas forcément à un sentiment négatif ou positif essayez d'en regarder quelques unes et décider de toutes les supprimer si elles posent problème.
-* En vous inspirant des parties NLP des TP [_Recommender_systems_](https://colab.research.google.com/github/DavidBert/N7-techno-IA/blob/master/code/recommender_systems/INSA_Reco_solution.ipynb#scrollTo=CSWUNjSB5oo-) et du TP [_Interpretability in Machine Learning_](https://colab.research.google.com/github/wikistat/AI-Frameworks/blob/website/code/interpretability/TP_interpretability_solution.ipynb), entrainez un modèle à prédire si un utilisateur a aimé ou non une recette à partir de son commentaire et utilisez la méthode LIME pour visualiser les mots permettant de justifier la décision de votre modèle.  
+*   En vous inspirant des parties NLP des TP [_Recommender_systems_](https://colab.research.google.com/github/DavidBert/N7-techno-IA/blob/master/code/recommender_systems/INSA_Reco_solution.ipynb#scrollTo=CSWUNjSB5oo-) et du TP [_Interpretability in Machine Learning_](https://colab.research.google.com/github/wikistat/AI-Frameworks/blob/website/code/interpretability/TP_interpretability_solution.ipynb), entrainez un modèle à prédire si un utilisateur a aimé ou non une recette à partir de son commentaire et utilisez la méthode LIME pour visualiser les mots permettant de justifier la décision de votre modèle.  
 Montrez quelques exemples de prédiction et de visualisations des mots importants.  
 Enregistrez votre modèle dans un fichier pickle.
 
