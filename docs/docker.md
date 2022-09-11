@@ -52,7 +52,7 @@ sudo docker image ls
 ```
 How many images can you see? What do they refer to?  
 
-Now that our images are built, we can now use them to instantiate containers.
+Now that our images are built, we can use them to instantiate containers.
 Since a container is an instance of an image, we can instantiate several containers using a single image.
 
 We will run our first container using the interactive mode.
@@ -115,7 +115,7 @@ cd [folder_name]
 python colorize_app.py
 ```
 
-Leave the container and look at your folder in your local machine. What can you see?
+Leave the container and look at your folder on your local machine. What can you see?
 
 Re-start your container and try to run your app in background mode.
 
@@ -126,4 +126,4 @@ sudo docker exec -t container1 python ./devlop/colorize_app.py --weights_path ./
 
 This is it for this session.  
 Do not hesitate to play a little more with Docker.  
-For instance try to train the mnist classifier directly in your container and to collect the tensorboard logs and the resulting weights on your local machine.
+For instance try to train the MNIST classifier directly in your container and to collect the tensorboard logs and the resulting weights on your local machine.
