@@ -16,6 +16,8 @@ nav:
   - Courses:
     - Course Introduction: introduction.md
     - Introduction to Git: git_intro.md
+    - Natural language processing:
+      - Introduction to Natural Language Processing (NLP): nlp.md
     # - Text:
     #   - Text Cleaning and Vectorization: text1.md
     #   - Words embedding: text2.md
