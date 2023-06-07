@@ -49,6 +49,16 @@
 </li>
                                     
   <li class="dropdown-submenu">
+    <a href="#" class="dropdown-item">Natural language processing</a>
+    <ul class="dropdown-menu">
+            
+<li>
+    <a href="nlp.html" class="dropdown-item">Introduction to Natural Language Processing (NLP)</a>
+</li>
+    </ul>
+  </li>
+                                    
+  <li class="dropdown-submenu">
     <a href="#" class="dropdown-item">Development tools for Data Scientist</a>
     <ul class="dropdown-menu">
             
@@ -298,9 +308,9 @@ if __name__=='__main__':
 <h2 id="training-script">Training script</h2>
 <p>You will now implement the training procedure.  </p>
 <p>Training a network to colorize images is a supervised regression problem.<br />
-Consider $x$ a grayscaled image and $y$ its corresponding colored image.
-Training a parametrized network $f_\theta$ to predict colorized images $ŷ$ amounts to minimizing the distance between the prediction $ŷ$ and the actual $y$.<br />
-That is to say minimizing $MSE(y, f_\theta(x))$.</p>
+Consider <span class="arithmatex">\(x\)</span> a grayscaled image and <span class="arithmatex">\(y\)</span> its corresponding colored image.
+Training a parametrized network <span class="arithmatex">\(f_\theta\)</span> to predict colorized images <span class="arithmatex">\(ŷ\)</span> amounts to minimizing the distance between the prediction <span class="arithmatex">\(ŷ\)</span> and the actual <span class="arithmatex">\(y\)</span>.<br />
+That is to say minimizing <span class="arithmatex">\(MSE(y, f_\theta(x))\)</span>.</p>
 <p>Fill the <code>colorize.py</code> file to train a UNet to colorize images (you can inspire yourself from the one in the MNIST example. However, be careful in your criterion choice):  </p>
 <pre><code class="language-python">import argparse # to parse script arguments
 from statistics import mean # to compute the mean of a list
@@ -427,6 +437,9 @@ Check on your network graph. You should see the U shape of your Unet.
                 shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
         </script>
         <script src="js/base.js" defer></script>
+        <script src="javascripts/mathjax.js" defer></script>
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6" defer></script>
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" defer></script>
         <script src="search/main.js" defer></script>
 
         <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
